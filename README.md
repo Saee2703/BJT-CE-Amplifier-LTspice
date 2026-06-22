@@ -1,10 +1,10 @@
 # BJT-CE-Amplifier-LTspice
-BJT Common Emitter Amplifier — LTspice Simulation
 
+##Overview
 A BC847B NPN transistor configured as a common emitter amplifier with a voltage divider biasing network — designed, biased, and verified entirely in LTspice XVII using transient analysis.
 This simulation demonstrates fundamental analogue amplifier design — calculating the DC operating point, establishing a stable Q-point through voltage divider biasing, and verifying AC signal amplification through transient analysis.
 
-Circuit Specifications
+## Circuit Specifications
  Component   Value           Purpose
 * Q1          BC847B          NPN Amplifying transistor
 * V2          12V             DCSupply voltage
@@ -20,7 +20,7 @@ Circuit Specifications
 
 Simulation Command : .tran 10m
 
-Results: 
+## Results: 
   Measurement     Value
 * Input voltage   V(vin)10mV peak
 * Output voltage  V(vout)~1.2V peak
@@ -29,7 +29,7 @@ Results:
 * Signal quality  Clean sinusoidal — no clipping
 * Frequency       1KHz
   
-Key Observations
+## Key Observations
 
 * Voltage gain of approximately 120x confirmed — 10mV input amplified to 1.2V output
 * 180 degree phase inversion visible — characteristic of common emitter configuration
